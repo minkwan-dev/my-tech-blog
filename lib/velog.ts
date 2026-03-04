@@ -22,7 +22,7 @@ export async function getVelogPosts(username: string) {
       variables: { username },
     }),
     // ISR 설정 (1시간) [cite: 45]
-    next: { revalidate: 30 },
+    next: { revalidate: 20 },
   });
 
   const data = await response.json();
