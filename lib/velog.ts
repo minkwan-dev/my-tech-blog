@@ -28,3 +28,4 @@ export async function getVelogPosts(username: string) {
   const data = await response.json();
   return data.data.posts;
 }
+// 주석
